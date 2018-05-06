@@ -1,37 +1,19 @@
-## Welcome to GitHub Pages
+## linux查看用户登陆信息
 
-You can use the [editor on GitHub](https://github.com/wsj123/linux-logininfo/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### 常用的命令
 
 ```markdown
-Syntax highlighted code block
+w 用户名
 
-# Header 1
-## Header 2
-### Header 3
+who 用户名
 
-- Bulleted
-- List
+last 查询当前用户和过去登陆的用户信息,包括重启时间
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+/var/log/wtmp
 
-[Link](url) and ![Image](src)
+lastlog 所有用户最后一次登陆时间
+
+/var/log/lastlog
+
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/wsj123/linux-logininfo/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
